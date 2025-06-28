@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --build",
-    "pretest_install": "npm install",
+    "build": "tsc --init && npm install",    
     "pretest": "tsc --noEmit && npx eslint tests/**",  
     "test:dry_run": "npx cross-env test_env=test npx playwright test --project=QA",      
     "posttest": "npx playwright show-report"    
   },
   "keywords": [],
-  "author": "",
+  "author": "Arun",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.22.0",

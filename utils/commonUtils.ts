@@ -4,7 +4,7 @@ import { logger } from '../utils/logger';
 import { isFalsy } from 'utility-types';
 import * as playwright from 'playwright';
  
-export const maxTimeout: number = 10_000;//Number.parseInt(process.env.TEST_TIMEOUT!);
+export const maxTimeout: number = Number.parseInt(process.env.TEST_TIMEOUT!);
  
  
 /**

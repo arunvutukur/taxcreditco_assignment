@@ -48,7 +48,7 @@ export default defineConfig({
     ['html',{ open: 'never' }],
  
     //** Generate Time Stamp default reports */
-    ['html', { outputFolder: path.join('playwright-report', generateTimestamp())}],  
+    //['html', { outputFolder: path.join('playwright-report', generateTimestamp())}],  
  
     ["json", {
       outputFile: "jsonReports/jsonReport.json"}],
