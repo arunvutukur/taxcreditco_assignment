@@ -1,0 +1,36 @@
+{
+  "name": "TaxCreditSurveyAutomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "pretest_install": "npm install",
+    "pretest": "tsc --noEmit && npx eslint tests/**",  
+    "test:dry_run": "npx cross-env test_env=test npx playwright test --project=QA",      
+    "posttest": "npx playwright show-report"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^22.10.1",  
+    "eslint": "^9.22.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "clean-dir": "^1.0.3",
+    "cross-env": "^7.0.3",    
+    "dotenv": "^16.4.7",
+    "env-cmd": "^10.1.0",
+    "prettier-ignore": "^0.2.0",
+    "utility-types": "^3.11.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
