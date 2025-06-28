@@ -38,19 +38,19 @@ In this section you can talk about:
    **Execution via npm command line**
      
      ---- Go to Playwright configuration ts
-     *For the first time please run the command line -> build
-        ->>>"build": "tsc --init && npm install"
+     *For the first time please run the command line -> "build"
+        ->>> "tsc --init && npm install"
         
-     *This is run as default before running the dry run    
-            "pretest": "tsc --noEmit && npx eslint tests/**" 
+     *This is run as default before running the dry run  ->  "pretest"
+         ->>> "tsc --noEmit && npx eslint tests/**" 
             
      **Dry run test**
      --Use the below command line to execute test in headed mode- >test:dry_run         
-            "test:dry_run":"npx cross-env test_env=test npx playwright test --project=QA" 
+          ->>> "npx cross-env test_env=test npx playwright test --project=QA" 
      
      **Reports**
-     --Use the below command to get the reports ( as post test it should display automatically if already exists on browser)            
-    "posttest": "npx playwright show-report"    
+     --Use the below command to get the reports ( as post test it should display automatically if already exists on browser) ->"posttest":            
+           ->>>"npx playwright show-report"    
  
 # Debug
   Debugging the project is key when trouble shooting for any issues observed in the project / tests. VS Code comes with inbuilt debugger for native playwright project.
